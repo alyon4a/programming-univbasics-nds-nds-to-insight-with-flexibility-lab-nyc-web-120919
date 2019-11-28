@@ -74,12 +74,14 @@ def movies_with_directors_set(source)
     name = source[i][:name]
     movies = source[i][:movies]
     y = 0 
+    inner_array = Array.new
     while y < movies.length do
-      puts movies
+      
       new_hash_element = {:director_name => name, :movie => movies[y][:title]}
-      new_array << new_hash_element
+      inner_array << new_hash_element
       y += 1
     end
+    new_array << inner_array
     i += 1 
   end
   new_array
