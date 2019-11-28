@@ -78,7 +78,7 @@ def movies_with_directors_set(source)
       puts movies
       new_hash_element = {:director_name => name, :movie => movies[y][:title]}
       new_array << new_hash_element
-      y += 0 
+      y += 1
     end
     i += 1 
   end
